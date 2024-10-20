@@ -1,16 +1,25 @@
-# training_project
+# Flutter Firebase Project
 
-A new Flutter project.
+This project is a Flutter application integrating Firebase services such as authentication and Firestore, along with local storage using shared preferences.
 
-## Getting Started
+## Table of Contents
+1. [Overview](#overview)
+2. [Firebase Packages](#firebase-packages)
+    - [firebase_auth](#firebase_auth)
+    - [cloud_firestore](#cloud_firestore)
+  
 
-This project is a starting point for a Flutter application.
+## Overview
 
-A few resources to get you started if this is your first Flutter project:
+This Flutter project utilizes Firebase for managing authentication, database, and app initialization, alongside shared preferences for storing local data persistently. It demonstrates how these packages work together to build a scalable mobile application.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Firebase Packages
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### firebase_auth: ^5.3.1
+**firebase_auth** is used to handle user authentication. It supports sign-in methods like email/password, phone authentication, and third-party providers (Google, Facebook, etc.). This package enables secure user registration, login, and management.But here i used email/password method for login.
+
+**Shared_preferences** is used for store user session that check if user is already logged in then it redirect user to homepage otherwise loginpage.
+
+**Cloud Firestore** is used to store quiz questions and users score according to time stamp...
+
+
